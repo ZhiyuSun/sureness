@@ -106,6 +106,7 @@ public class DefaultPathRoleMatcher implements TreePathRoleMatcher {
                 logger.warn("sureness - pathTreeProvider: {} provideExcludedResource is null", provider);
             }
         }
+        logger.info("start rebuild tree");
         root.rebuildTree(resources);
 
         excludeResources = excludeResources.stream()
